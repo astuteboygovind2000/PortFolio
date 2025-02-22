@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedFinder Project</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          position: relative;
+          z-index: 1;
+          overflow: visible; /* Ensure the zoomed image can overflow */
+      }
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+      p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #555;
+      }
+      .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .image-container {
+          width: 30%;
+          margin: 10px;
+          position: relative; /* Ensure each image is relative to its own container */
+          overflow: visible; /* Prevent cropping of zoomed images */
+      }
+      .images img {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, z-index 0s ease 0.3s; /* Smooth zoom effect */
+      }
+      .images img:hover {
+          transform: scale(2); /* Full zoom */
+          z-index: 1000; /* Bring the zoomed image above others */
+          position: relative; /* Ensures each image zooms properly */
+      }
+  </style>  
+</head>
+<body>
+    <div class="container">
+        <h1>MedFinder Project Overview</h1>
+        <p>
+            Welcome to MedFinder, a web platform designed to help users easily find medicines in emergency situations. 
+            The project features a homepage with key functionalities and a search page to locate the required medicine quickly. 
+            It also includes an admin block where all administrators are displayed, providing information about their skills 
+            and contact details.
+        </p>
+        <h2>Sample Images</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="medi1.jpg" alt="Homepage">
+                <p>Homepage</p>
+            </div>
+            <div class="image-container">
+                <img src="medi2.jpg" alt="Medicine Search">
+                <p>Medicine Search Page</p>
+            </div>
+            <div class="image-container">
+                <img src="medi3.jpg" alt="Admin Block">
+                <p>Admin Block Page</p>
+            </div>
+            <div class="image-container">
+              <img src="medi4.jpg" alt="New Medical Register Request">
+              <p>New Medical Register Request</p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedFinder Project</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          position: relative;
+          z-index: 1;
+          overflow: visible; /* Ensure the zoomed image can overflow */
+      }
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+      p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #555;
+      }
+      .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .image-container {
+          width: 30%;
+          margin: 10px;
+          position: relative; /* Ensure each image is relative to its own container */
+          overflow: visible; /* Prevent cropping of zoomed images */
+      }
+      .images img {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, z-index 0s ease 0.3s; /* Smooth zoom effect */
+      }
+      .images img:hover {
+          transform: scale(2); /* Full zoom */
+          z-index: 1000; /* Bring the zoomed image above others */
+          position: relative; /* Ensures each image zooms properly */
+      }
+  </style>  
+</head>
+<body>
+    <div class="container">
+        <h1>DoctorFinder Project Overview</h1>
+        <p>
+            This project is a web-based platform that allows users to find doctors in available hospitals and check their availability in real-time. It aims to streamline the process of locating medical professionals and ensuring patients can book appointments efficiently.
+            
+            <h3>Key Features:</h3>
+            <ol>
+                <li>Search Doctors:
+                    <ul>
+                        <li>Users can search for doctors based on specialization, hospital.</li>
+                        <li>View profiles, including qualifications, specialties, and consultation fees.</li>
+                        <li>Can check the availability of doctor before visit.</li>
+                    </ul>
+                </li>
+                <li>
+                    Check Doctor Availability:
+                    <ul>
+                        <li>Real-time availability of doctors across different hospitals..</li>
+                        <li>Users can check doctor schedules, including available consultation times..</li>
+                        <li>Option to view upcoming slots for each doctor and book appointments by call.</li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    Hospital Management:
+                    <ul>
+                        <li>Hospitals can update the availability of doctors, manage schedules, and notify patients of changes in real-time.</li>
+                        <li>View and manage appointment bookings for doctors within their facility.</li>
+                        
+                    </ul>
+                </li>
+            </ol>
+        </p>
+
+        <h2>Technology Stack:</h2>
+        <ul>
+            <li><b>Frontend:</b>HTML, CSS, JS, Bootstrap</li>
+            <li><b>Backend:</b>Flask Python frameword, SQL Database</li>
+        </ul>
+
+        <h2>Sample Images</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="dc1.jpg" alt="Homepage">
+                <p>All Registered Hospitals</p>
+            </div>
+            <div class="image-container">
+                <img src="dc2.jpg" alt="Admin Block">
+                <p>Admin Block</p>
+            </div>
+            <div class="image-container">
+                <img src="dc3.jpg" alt="doctor Management">
+                <p>Hospital Doctor Management page</p>
+            </div>
+            <div class="image-container">
+              <img src="dc4.jpg" alt="seciallity search">
+              <p>Doctor Serch by their specializations</p>
+            </div>
+
+            <div class="image-container">
+                <img src="dc5.jpg" alt="search result">
+                <p>Search Result</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

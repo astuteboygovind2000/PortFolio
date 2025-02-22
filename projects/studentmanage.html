@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedFinder Project</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          position: relative;
+          z-index: 1;
+          overflow: visible; /* Ensure the zoomed image can overflow */
+      }
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+      p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #555;
+      }
+      .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .image-container {
+          width: 30%;
+          margin: 10px;
+          position: relative; /* Ensure each image is relative to its own container */
+          overflow: visible; /* Prevent cropping of zoomed images */
+      }
+      .images img {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, z-index 0s ease 0.3s; /* Smooth zoom effect */
+      }
+      .images img:hover {
+          transform: scale(2); /* Full zoom */
+          z-index: 1000; /* Bring the zoomed image above others */
+          position: relative; /* Ensures each image zooms properly */
+      }
+  </style>  
+</head>
+<body>
+    <div class="container">
+        <h1>MedFinder Project Overview</h1>
+        <p>
+            This project is a web-based platform designed for coaching centers or educational institutions to manage student fees, track dues, and handle installment payments efficiently. The system provides role-based access to three different types of users: Admin, Accountant, and Student, each with distinct permissions and functionalities.
+
+            <h3>Key Features:</h3>
+            <ol>
+                <li>Admin Dashboard:
+                    <ul>
+                        <li>Full access to all system functionalities.</li>
+                        <li>Can view and manage student profiles, fee structures, payment histories, and installments.</li>
+                        <li>Update courses in coaching and manage ( edit and delete ) that courses.</li>
+                        <li>Ability to add, update, or delete student information.</li>
+                    </ul>
+                </li>
+                <li>
+                    Accountant Interface:
+                    <ul>
+                        <li>Focused on financial management.</li>
+                        <li>Register any course on student profile.</li>
+                        <li>Can update payment statuses, manage fee collections, and record installment plans for students.</li>
+                        <li>Track outstanding dues and send payment reminders to students.</li>
+                        <li>View and generate fee-related reports.</li>
+                    </ul>
+                </li>
+                <li>
+                    Student Portal:
+                    <ul>
+                        <li>Personalized access for students to view their fee details.</li>
+                        <li>Can track outstanding dues, view installment plans, and payment history.</li>
+                        <li>Can see the old and new joined courses.</li>
+                    </ul>
+                </li>
+            </ol>
+        </p>
+
+        <h2>Technology Stack:</h2>
+        <ul>
+            <li><b>Frontend:</b>HTML, CSS, JS, Bootstrap</li>
+            <li><b>Backend:</b>Django Python frameword</li>
+        </ul>
+
+        <h2>Sample Images</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="stlogin.jpg" alt="Homepage">
+                <p>Login Page</p>
+            </div>
+            <div class="image-container">
+                <img src="st1.jpg" alt="Medicine Search">
+                <p>Admin Block</p>
+            </div>
+            <div class="image-container">
+                <img src="st2.jpg" alt="Admin Block">
+                <p>Student Management by ADMIN</p>
+            </div>
+            <div class="image-container">
+              <img src="st3.jpg" alt="New Medical Register Request">
+              <p>Accountant Block</p>
+            </div>
+
+            <div class="image-container">
+                <img src="st4.jpg" alt="New Medical Register Request">
+                <p>Student Block</p>
+            </div>
+
+              <div class="image-container">
+                <img src="st5.jpg" alt="New Medical Register Request">
+                <p>Student View</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

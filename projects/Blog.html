@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedFinder Project</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      
+      .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .tech-list {
+            margin-left: 20px;
+            list-style-type: square;
+        }
+      
+      .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .image-container {
+          width: 30%;
+          margin: 10px;
+          position: relative; /* Ensure each image is relative to its own container */
+          overflow: visible; /* Prevent cropping of zoomed images */
+      }
+      .images img {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, z-index 0s ease 0.3s; /* Smooth zoom effect */
+      }
+      .images img:hover {
+          transform: scale(2); /* Full zoom */
+          z-index: 1000; /* Bring the zoomed image above others */
+          position: relative; /* Ensures each image zooms properly */
+      }
+  </style>  
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <h1>Blog Writing Platform</h1>
+                <h3 align="center">Govind's Blog</h3>
+    
+            <p>
+                I developed a blog platform that allows users to easily browse and read posts while maintaining a streamlined content management system controlled by the admin.
+            </p>
+    
+            <h2>Key Features:</h2>
+            <ul class="tech-list">
+                <li><strong>Admin-Only Post Management:</strong> The platform is designed with a focus on control and quality, where only the admin can create, upload, and manage blog posts. This ensures that content is carefully curated and maintained.</li>
+                <li><strong>Public Access to Posts:</strong> All users can freely browse and read posts without needing to sign up or log in. The platform is accessible to anyone, making it a great tool for sharing knowledge with a wider audience.</li>
+                <li><strong>Category-Based Navigation:</strong> Posts are organized by categories, enabling users to easily explore content based on their interests. This categorized structure improves the user experience by providing a clean and intuitive way to navigate the site.</li>
+                <li><strong>Responsive Design:</strong> The platform is fully responsive, ensuring that users can access and read posts seamlessly on any device, whether it’s a desktop, tablet, or mobile.</li>
+            </ul>
+    
+            <h2>Technologies Used:</h2>
+            <ul class="tech-list">
+                <li><strong>Frontend:</strong> Bootstrap, CSS, HTML for building a dynamic and interactive user interface that ensures smooth navigation and post viewing.</li>
+                <li><strong>Backend:</strong> Djnago Framework of Python to handle user roles (admin for content management) and serve posts.</li>
+            </ul>
+    
+            <p>
+                This project demonstrates my ability to create a user-friendly and content-rich platform, combining both a robust backend for admin-controlled content and a simple, accessible frontend for public users. Future enhancements include advanced search functionality, filtering options by tags, and social media sharing for each post.
+            </p>
+        </div>
+
+        <h2>Sample Images</h2>
+        <div class="images">
+            <div class="image-container">
+                <img src="blg1.jpg" alt="Home Page">
+                <p>Home Page</p>
+            </div>
+            <div class="image-container">
+                <img src="blg2.jpg" alt="Category-Based Posts">
+                <p>Category-Based Posts</p>
+            </div>
+            <div class="image-container">
+              <img src="blg3.jpg" alt="Contact Page">
+              <p>Contact Page</p>
+            </div>
+
+            <div class="image-container">
+                <img src="blg4.jpg" alt="Contact Form">
+                <p>Contact Form</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

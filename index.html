@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171127653-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171127653-2');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Govind Singh Portfolio</title>
+  <link rel="icon" href="images/logogs.png" type="image/x-icon" />
+  
+  <!-- css -->
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- <link rel="shortcut icon" href="./images/logogs.jpg" type="icon">  -->
+
+  <<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <script type="text/javascript">
+    // Initialize EmailJS
+    (function () {
+      emailjs.init("aGTqRW-LTSGIOBpRo");
+    })();
+  
+    function sendMail() {
+      // Collect form data
+      let params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value, // Sender's email
+        contact: document.getElementById("contact").value,
+        message: document.getElementById("message").value,
+      };
+  
+      // Send email using EmailJS
+      emailjs
+        .send("service_lotzo9b", "template_az0zyie", params)
+        .then(
+          function (response) {
+            alert("Email sent successfully!");
+            
+            document.querySelector("form").reset(); // Reset the form
+          },
+          function (error) {
+            alert("Failed to send email. Please try again.");
+            
+          }
+        );
+    }
+  </script> 
+
+  <script>
+    // Add a click event to the WhatsApp button to open the chat
+    document.getElementById('whatsapp-button').addEventListener('click', function() {
+        window.open("https://wa.me/+919660837005", "_blank");
+    });
+</script>
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="nav" id="id" id="home">
+    <div class="nav-center">
+      <!-- logo -->
+
+      <div class="nav-header">
+        <button class="nav-btn" id="nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- logo -->
+
+      <!-- nav-links -->
+      <div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
+          </li>
+          <li>
+            <a href="#blogs">Certificates</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- nav-links -->
+    </div>
+  </nav>
+  <!-- navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <button class="close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <!-- nav-links -->
+
+      <ul class="sidebar-links">
+        <li>
+          <a href="index.html" onclick="getElementById('close-btn').click()">home</a>
+        </li>
+        <li>
+          <a href="#about" onclick="getElementById('close-btn').click()">about</a>
+        </li>
+        <li>
+          <a href="#projects" onclick="getElementById('close-btn').click()">projects</a>
+        </li>
+        <li>
+          <a href="#blogs" onclick="getElementById('close-btn').click()">Certificates</a>
+        </li>
+        <li>
+          <a href="#contact" onclick="getElementById('close-btn').click()">contact</a>
+        </li>
+      </ul>
+
+      <!-- nav-links -->
+
+      <!-- social links -->
+
+      <ul class="social-icons">
+        <li>
+          <a href="https://twitter.com/ASTUTEBOYGOVIND" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/govind-singh-tanwar" target="_blank" rel="noopener noreferrer"
+            class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/astuteboygovind2000" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/astuteboygovind/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/astute_boy_govind/" target="_blank" rel="noopener noreferrer"
+            class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- social-links -->
+    </div>
+  </aside>
+  <!-- sidebar -->
+  <!-- header -->
+  <header class="hero">
+    <div class="section-center hero-center">
+      <article class="hero-info">
+        <div class="underline"></div>
+        <h1>i'm Govind</h1>
+        <h4>Full Stack MERN Developer <br>
+          <br>Python Developer <br>
+          <br> Web Designer</h4>
+        <a href="#contact" class="btn hero-btn">Contact me</a>
+        <!-- social icons -->
+        <ul class="social-icons hero-icons">
+          <li>
+            <a href="https://twitter.com/ASTUTEBOYGOVIND" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/govind-singh-tanwar/" target="_blank" rel="noopener noreferrer"
+              class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/astuteboygovind2000" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/astuteboygovind/" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/astute_boy_govind/" target="_blank" rel="noopener noreferrer"
+              class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <article class="hero-img">
+        <img src="./images/mypic.jpg" class="hero-photo" loading="lazy" alt="Govind Singh" />
+      </article>
+    </div>
+  </header>
+  <!-- end of header -->
+  <!-- about -->
+  <section class="section about" id="about">
+    <div class="section-center about-center">
+      <!-- about img -->
+      <article class="about-img">
+        <img src="./images/mypic2.jpg" class="hero-photo" loading="lazy" alt="Govind Singh" />
+      </article>
+      <!-- about info -->
+      <article class="about-info">
+        <!-- section title -->
+        <div class="section-title about-title">
+          <h2>about</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p style="font-size: 13px;">
+          My name is Govind Singh Tanwar, and I am a B.Sc. graduate from the University of Kota, Kota.
+          I am passionate about both programming and psychology. Programming lets me read the mind of a computer, while psychology helps me understand the mind of a human.
+        </p>
+        
+        <p style="font-size: 13px;">
+          I also enjoy debugging as it allows me to dive deep into the code and solve complex issues. It’s a process that sharpens my problem-solving skills and helps me understand software at a deeper level.
+        </p>
+        <p style="font-size: 13px;">
+          I am a Python software developer with around 2 years of coding experience. I enjoy designing websites and building software using Python. I am proficient in Flask, FastAPI, and Django, with Django being my favorite framework.
+        </p>
+        <p style="font-size: 13px;">
+          Additionally, I am a Full Stack Developer with expertise in MERN (MongoDB, Express, React, Node.js).
+        </p>
+        <a href="https://drive.google.com/file/d/1qxikf_vDhjKDbPRt52HpFJcxbtysaRJq/view?usp=sharing" target="_blank" class="btn">download CV</a>
+      </article>
+    </div>
+  </section>
+  <!-- end of about -->
+  <!-- projects -->
+  <section class="section" id="projects">
+    <!-- section title -->
+    <div class="section-title">
+      <h2 class="section-primary">Projects</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center">
+      <div class="card-list">
+        <div class="project-card">
+          <div class="project-img" >
+            <img src="./projects/ecc1.jpg" loading="lazy" alt="weather-app project">
+            
+          </div>
+          <div>
+            <h2>trendvault.Com </h2>
+            <div class="title"><b>Tech Used</b> - React, FireBase, Tailwind CSS</div>
+          </div>
+          <div class="colorband"></div>
+          <div class="desc"> 
+            
+            TrendVault is a web-based platform for discovering and shopping the latest fashion trends. It offers a stylish product catalog, user authentication, and a seamless shopping cart experience.
+            <br><br><br><br><br>
+          </div>
+          <div class="actions" style="margin-bottom: 0px;">
+              <button>
+                <a href="https://trendvault.netlify.app" target="_blank" rel="noopener noreferrer">MORE INFO ABOUT PROJECT</a>
+              </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" >
+            <img src="./projects/dc5.jpg" loading="lazy" alt="weather-app project">
+            
+          </div>
+          <div>
+            <h2>DoctorFinder </h2>
+            <div class="title"><b>Tech Used</b> - Flask Framewrok, SQL Database, Bootstrap, HTML, CSS, JavaScript</div>
+          </div>
+          <div class="colorband"></div>
+          <div class="desc"> 
+            <br><br>
+            This project is a web-based platform that allows users to find doctors in available hospitals and check their availability in real-time.
+            <br><br><br><br>
+          </div>
+          <div class="actions" style="margin-bottom: 0px;">
+              <button>
+                <a href="projects/doctorfind.html" target="_blank" rel="noopener noreferrer">MORE INFO ABOUT PROJECT</a>
+              </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" >
+            <img src="./projects/medifrnt.jpg" loading="lazy" alt="weather-app project">
+            
+          </div>
+          <div>
+            <h2>MedFinder <br> medicineoncall.com </h2>
+            <div class="title"><b>Tech Used</b> - Django Framewrok, Bootstrap, HTML, CSS, JavaScript</div>
+          </div>
+          <div class="colorband"></div>
+          <div class="desc"> 
+            <br>
+            
+            The Medicine Finder project is a web platform designed to help users locate essential medicines quickly, especially during emergencies. 
+
+            <br>
+            <br><br>
+
+          </div>
+          <div class="actions">
+              <button>
+                <a href="projects/medicinefinder.html" target="_blank" rel="noopener noreferrer">MORE INFO ABOUT PROJECT</a>
+              </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" >
+            <img src="./projects/studentfrnt.jpg" loading="lazy" alt="weather-app project">
+            
+          </div>
+          <div>
+            <h2>Student Fees Management System </h2>
+            <div class="title"><b>Tech Used</b> - Django Framewrok, Bootstrap, HTML, CSS, JavaScript</div>
+          </div>
+          <div class="colorband"></div>
+          <div class="desc"> 
+            
+            This project is a web-based platform designed for coaching centers or educational institutions to manage student fees, track dues, and handle installment payments efficiently. 
+
+          </div>
+          <div class="actions">
+              <button>
+                <a href="projects/studentmanage.html" target="_blank" rel="noopener noreferrer">MORE INFO ABOUT PROJECT</a>
+              </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" >
+            <img src="./projects/blg1.jpg" loading="lazy" alt="weather-app project">
+            
+          </div>
+          <div>
+            <h2>Blog Writing Website <br><br> Govind's Blog </h2>
+            <div class="title"><b>Tech Used</b> - Django Python Framewrok,SQLite, Bootstrap, HTML, CSS, JavaScript</div>
+          </div>
+          <div class="colorband"></div>
+          <div class="desc"> 
+            <br>
+            I developed a blog platform that allows users to easily browse and read posts while maintaining a streamlined content management system controlled by the admin.
+            <br><br><br>
+          </div>
+          <div class="actions" style="margin-bottom: 0px;">
+              <button>
+                <a href="projects/Blog.html" target="_blank" rel="noopener noreferrer">MORE INFO ABOUT PROJECT</a>
+              </button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img" >
+            <img src="./projects/TODOLIST.jpg" loading="lazy" alt="weather-app project">
+            
+          </div>
+          <div>
+            <h2>TODO LIST SOFTWARE <br><br> Govind's Blog </h2>
+            <div class="title"><b>Tech Used</b> - FastAPI Python Framewrok,SQLite, Bootstrap, HTML, CSS, JavaScript</div>
+          </div>
+          <div class="colorband"></div>
+          <div class="desc"> 
+            
+            "I've developed a simple yet effective to-do list software that helps users manage their daily tasks with ease. It allows you to create, update, and delete tasks, making it easy to stay organized and focused. 
+            <br><br><br>
+          </div>
+          
+        </div>
+
+      </div>
+  </section>
+  <!-- end of projects -->
+
+  <!--================ WhatsApp Button ================ -->
+  <div class="whatsapp-btn" id="whatsapp-button">
+    <a href="https://wa.me/+919660837005" target="_blank" id="whatsapp-link">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <!--================ End of WhatsApp Button ================ -->
+
+  <!-- skills -->
+  <section class="section skills" id="skills">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>skills</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center skills-center">
+      <article>
+        <h3>Languages</h3>
+        <div class="skill-box-2">
+          <div>
+            <img class="skill-icn" src="./logos/python.svg" loading="lazy" alt="python">
+            <p class="skill-name">Python</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/java.png" loading="lazy" alt="python">
+            <p class="skill-name">JAVA CORE</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/htmllll.png" loading="lazy" alt="html logo">
+            <p class="skill-name">HTML</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/css-3.png" loading="lazy" alt="CSS logo">
+            <p class="skill-name">CSS</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/javascript.svg" loading="lazy" alt="javascript">
+            <p class="skill-name">Javascript</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/bootstrap.png" loading="lazy" alt="Bootstrap Logo">
+            <p class="skill-name">Bootstrap</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/TailwindLogo.svg" loading="lazy" alt="Bootstrap Logo">
+            <p class="skill-name">Tailwind Css</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/CLogo.png" loading="lazy" alt="Bootstrap Logo">
+            <p class="skill-name">C Language</p>
+          </div>
+
+        </div>
+      </article>
+      <article>
+        <h3>Technologies</h3>
+        <div class="skill-box-2">
+          <div>
+            <img class="skill-icn" src="./logos/Flask.png" loading="lazy" alt="Flask Logo">
+            <p class="skill-name">FLASK</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/django.svg" loading="lazy" alt="Django Logo">
+            <p class="skill-name">Django</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/FastApi.png" loading="lazy" alt="FastApi Logo">
+            <p class="skill-name">FASTAPI</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/react.svg" loading="lazy" alt="SQL logo">
+            <p class="skill-name">React</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/node-js.svg" loading="lazy" alt="SQL logo">
+            <p class="skill-name">Node.js</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/ReactNativeLogo.png" loading="lazy" alt="SQL logo">
+            <p class="skill-name">React Native</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/sql.png" loading="lazy" alt="SQL logo">
+            <p class="skill-name">SQL</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/mongodb.png" loading="lazy" alt="mongodb logo">
+            <p class="skill-name">MONGODB</p>
+          </div>
+
+          <div>
+            <img class="skill-icn" src="./logos/sqlite.png" loading="lazy" alt="SQLite Logo">
+            <p class="skill-name">SQLite</p>
+          </div>
+
+        </div>
+      </article>
+      <article>
+        <h3>Tools</h3>
+        <div class="skill-box-3">
+          <div>
+            <img class="skill-icn" src="./logos/vscode.svg" loading="lazy" alt="vscode">
+            <p class="skill-name">Vs code</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/git.svg" loading="lazy" alt="git">
+            <p class="skill-name">Git</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/dw.png" loading="lazy" alt="dreamweaver logo">
+            <p class="skill-name">dreamweaver</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/pycharm.png" loading="lazy" alt="PyCharm logo">
+            <p class="skill-name">Pycharm</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/AndroidStudioLogo.png" loading="lazy" alt="PyCharm logo">
+            <p class="skill-name">Android Studio</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/figma.svg" loading="lazy" alt="PyCharm logo">
+            <p class="skill-name">Figma</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/git.svg" loading="lazy" alt="PyCharm logo">
+            <p class="skill-name">Git Hub</p>
+          </div>
+          <div>
+            <img class="skill-icn" src="./logos/SublimeTextLogo.png" loading="lazy" alt="PyCharm logo">
+            <p class="skill-name">Sublime Text Editor</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- end of skills -->
+  <!-- timeline -->
+  <section class="section timeline">
+    <!-- section title -->
+    <div class="section-title">
+      <h2 class="section-primary">timeline</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center timeline-center">
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>Jan - 2025</h4>
+        <p>
+          I'm currently working as a freelancer, focusing on personal projects, building my portfolio, and expanding my expertise with the MERN stack (MongoDB, Express, React, Node.js) along with Python.
+        </p>
+        <span class="number"> 8 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>Sept - 2024</h4>
+        <p>
+          I'm currently working as a freelancer, focusing on personal projects and building my portfolio.
+        </p>
+        <span class="number"> 8 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>Aug - 2024</h4>
+        <p>
+          I've been writing and sharing my knowledge through blogs, staying active on LinkedIn, and connecting with fellow developers. I've published several posts, focusing on development tips and tutorials, and I'm continuously striving to contribute to the community. I even created my blog using Django to consolidate my learnings and share them with others.
+        </p>
+        <span class="number"> 7 </span>
+      </article>
+
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>July - 2024</h4>
+        <p>
+          I’ve also been reading up on FastAPI, which has caught my attention for its speed and simplicity in building APIs. Its asynchronous capabilities and ease of use make it a strong choice for developing modern, high-performance applications. I’m excited to dive deeper into FastAPI and see how it complements frameworks like Django and Flask.
+        </p>
+        <span class="number"> 6 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>2024</h4>
+        <p>
+          I've started exploring Django and Flask, both of which are fantastic frameworks for web development. Django’s powerful built-in features and Flask’s flexibility make them great for building dynamic, full-stack applications. I'm gradually diving deeper into these frameworks to create robust, production-ready apps.
+        </p>
+        <span class="number"> 5 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4> 2023</h4>
+        <p>
+          Started with JavaScript along with Java Core, its a complete language in itself and it took me a while to get on hold with it.
+          Played around with JavaScript, skimmed through its frameworks, and make some small projects out of it.
+          for instance, a basic calculator.
+        </p>
+        <span class="number"> 4 </span>
+      </article>
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>2022</h4>
+        <p>
+          After Completetion of frontend part i started learning python for backend, my main goal with programming was to create things that could help the masses.
+          Python was a great language to jump on but it didn't teach the basics of how computer work so I learned java and C with it.
+
+        </p>
+        <span class="number"> 3 </span>
+      </article>
+
+
+      <article class="timeline-item">
+        <h4>2021</h4>
+        <p>
+          College over, Started learning web development. Cleared the basics like how the web works,
+          how files are transferred, and all. Then completed an HTML, CSS course and designed some basic websites with it that lacked functionality.
+        </p>
+        <span class="number"> 2 </span>
+      </article>
+
+
+      <!-- end of  single timeline item -->
+      <!-- single timeline item -->
+      <article class="timeline-item">
+        <h4>2020</h4>
+        <p>
+          Started with working as a Business Development Executive, where I actively drive business growth by identifying new opportunities, building strong partnerships, and developing strategic plans. My role involves collaborating with sales and marketing teams to craft tailored solutions that meet client needs while expanding the company's market reach. I’ve successfully fostered key relationships, negotiated deals, and contributed to the development of innovative strategies that have positively impacted revenue. I’m passionate about helping the business reach new heights and look forward to continuing my journey in creating long-term value for both clients and the company.
+        </p>
+        <span class="number"> 1 </span>
+      </article>
+
+      
+      <!-- end of  single timeline item -->
+    </div>
+  </section>
+  <!--end of  timeline -->
+  <!-- Certificates -->
+  <section class="section blog" id="blogs">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>Certificates</h2>
+      <div class="underline"></div>
+    </div>
+    <!--end of section title -->
+    <div class="section-center">
+      <!-- single article -->
+      <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./projects/Python Developer.png" loading="lazy" alt="Blog cover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Certificate of Completion</span>
+              <h4>Python Developer
+              </h4>
+              <p style="margin-bottom: 0.3rem;">
+                This certificate is awarded to <b>GOVIND SINGH TANWAR</b> for completing the Python Development.The course covered core Python programming concepts, web development using Django, database management with SQL, and API integration. The skills acquired include building dynamic web applications, handling databases, implementing user authentication, and deploying projects..
+              </p>
+            
+              <div class="user">
+                <img src="./images/vgt.jpg" loading="lazy" alt="Govind Singh" />
+                <div class="user-info">
+                  <h5>Issued By:&nbsp;&nbsp;&nbsp;[VGT]</h5>
+                  <small>Date: &nbsp;&nbsp; [10 Sept]</small>
+                </div>
+              </div>
+              
+            </div>
+            <center><a href="https://drive.google.com/file/d/16ErLiMMN8bXQNBJpgxijFwYoClRo0Uu0/view?usp=sharing" target="_blank" class="btn1">Download</a></center>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./projects/Web Designing.png" loading="lazy" alt="Blog cover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Certificate of Completion</span>
+              <h4>Web Designing
+              </h4>
+              <p style="margin-bottom: 0.3rem;">
+                This certificate is awarded to Govind Singh Tanwar for completing the Web Designing.The course covered the principles of web design, including layout, typography, color theory, and responsive design using HTML, CSS, JavaScript, JQuery, Media Query and Bootstrap. It also focused on building user-friendly interfaces and optimizing websites for different devices and screen sizes..
+              </p>
+            
+              <div class="user">
+                <img src="./images/vgt.jpg" loading="lazy" alt="Govind Singh" />
+                <div class="user-info">
+                  <h5>Issued By:&nbsp;&nbsp;&nbsp;[VGT]</h5>
+                  <small>Date: &nbsp;&nbsp; [10 Sep]</small>
+                </div>
+              </div>
+              
+            </div>
+            <center><a href="https://drive.google.com/file/d/1LSSW0zS3t_3ZLaSNOQEn4y3yMU_IqJli/view?usp=sharing" target="_blank" class="btn1">download</a></center>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./projects/Python Core.png" loading="lazy" alt="Blog cover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Certificate of Completion</span>
+              <h4>Python Core Language
+              </h4>
+              <p style="margin-bottom: 0.3rem;">
+                This certificate is awarded to Govind Singh Tanwar for completing the Python Core.The course covered foundational Python programming concepts, including data types, control structures, functions, object-oriented programming (OOP), and error handling. The skills acquired include problem-solving using Python, writing efficient code, and debugging.
+              </p>
+            
+              <div class="user">
+                <img src="./images/vgt.jpg" loading="lazy" alt="Govind Singh" />
+                <div class="user-info">
+                  <h5>Issued By:&nbsp;&nbsp;&nbsp;[VGT]</h5>
+                  <small>Date: &nbsp;&nbsp; [10 Sep]</small>
+                </div>
+              </div>
+              
+            </div>
+            <center><a href="https://drive.google.com/file/d/1Rvb0eLkSN777v7g_gAHhB9ixKmpdw1fX/view?usp=sharing" target="_blank" class="btn1">download</a></center>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./projects/C Language.png" loading="lazy" alt="Blog cover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Certificate of Completion</span>
+              <h4>C Language
+              </h4>
+              <br>
+              <p style="margin-bottom: 0.3rem;">
+                This certificate is awarded to [Your Name] for completing the C Language with A++ Grade.The course covered fundamental concepts of C programming, including data types, operators, control structures, functions, pointers, memory management, and file handling. The skills acquired include writing efficient programs, understanding low-level memory operations, and developing structured applications..
+              </p>
+            
+              <div class="user">
+                <img src="./images/vgt.jpg" loading="lazy" alt="Govind Singh" />
+                <div class="user-info">
+                  <h5>Issued By:&nbsp;&nbsp;&nbsp;[VGT]</h5>
+                  <small>Date: &nbsp;&nbsp; [10 Sep]</small>
+                </div>
+              </div>
+              
+            </div>
+            <center><a href="https://drive.google.com/file/d/1wh2kaHDojXgSt7w_9ay1-_91bQ2_HSfu/view?usp=sharing" target="_blank" class="btn1">download</a></center>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./projects/Logo by ML.jpg" loading="lazy" alt="Blog cover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Certificate of Completion</span>
+              <h4>Logo Designing
+              </h4>
+              <br>
+              <p style="margin-bottom: 0.3rem;">
+                <br>
+                This certificate is presented to <b>Govind Singh Tanwar</b> for successfully completing a course about <b>Logo Design</b>.
+                The course covered various aspects of logo design, including principles of design, color theory, typography, and practical application using design software.
+              </p>
+              <br><br><br>
+              <div class="user">
+                <img src="./images/MindLuster.jpg" loading="lazy" alt="Govind Singh" />
+                <div class="user-info">
+                  <h5>Issued By:&nbsp;&nbsp;&nbsp;[Mind Luster]</h5>
+                  <small>Date: &nbsp;&nbsp; [30 Jan]</small>
+                </div>
+              </div>
+              
+            </div>
+            <center><a href="https://drive.google.com/file/d/1fT9p_fLKvDZetHilPTlA4N6MbgHRsr7b/view?usp=sharing" target="_blank" class="btn1">download</a></center>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="./projects/Full Stack by UDEMY.jpg" loading="lazy" alt="Blog cover" />
+            </div>
+            <div class="card-body">
+              <span class="tag tag-teal">Certificate of Completion</span>
+              <h4>Full Stack Developer
+              </h4>
+              <br>
+              <p style="margin-bottom: 0.3rem;">
+                This certificate is presented to <b>Govind Singh Tanwar</b> for successfully completing the course <b>Full-Stack Web Development</b> For Beginners.The course covered various aspects of web development, including front-end and back-end technologies, databases, and practical application using development tools like react,mongodb any many more.
+              </p>
+              <br>
+              <div class="user">
+                <img src="./images/udemy.jpg" loading="lazy" alt="Govind Singh" />
+                <div class="user-info">
+                  <h5>Issued By:&nbsp;&nbsp;&nbsp;[Udemy]</h5>
+                  <small>Date: &nbsp;&nbsp; [28 Nov]</small>
+                </div>
+              </div>
+              <br>
+            </div>
+            <center><a href="https://drive.google.com/file/d/1MeRVLdA-MCGq18s-ufOW8j-0sn5UvshL/view?usp=sharing"  target="_blank" class="btn1">download</a></center>
+          </div>
+
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!--end of Certificates -->
+  <!-- contact form -->
+  <section class="section contact" id="contact">
+    <div class="contact-card">
+      <div class="contact-desc">
+        <h4>Contact Me</h4>
+      </div>
+      <div class="contact-form">
+        <form onsubmit="sendMail(); return false;" method="POST">
+          <div>
+            <label class="primary-text" for="name">Name:</label>
+            <input type="text" id="name" name="name" class="contact-input" required>
+          </div>
+          <div>
+            <label class="primary-text" for="email">Email:</label>
+            <input type="email" id="email" name="email" class="contact-input" required>
+          </div>
+          <div>
+            <label class="primary-text" for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" class="contact-input" required>
+          </div>
+          <div>
+            <label class="primary-text" for="message">Message:</label>
+            <textarea id="message" name="message" class="contact-input" required></textarea>
+          </div>
+          <button type="submit" class="contact-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- End of Contact form section -->
+  <!-- footer -->
+  <footer class="footer" id="connect">
+
+    <!-- social icons -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://twitter.com/ASTUTEBOYGOVIND" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/govind-singh-tanwar/" target="_blank" rel="noopener noreferrer"
+          class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href=https://github.com/astuteboygovind2000" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.facebook.com/astuteboygovind/" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      <li>
+        <a href="https://www.instagram.com/astute_boy_govind/" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+
+    <p>&copy; <span id="date"></span> Govind Singh. All rights reserved <span>&#x1f1ee; &#x1f1f3;</span>
+    </p>
+  </footer>
+    <script async src="./js/app.js"></script>
+</body>
+</html>
